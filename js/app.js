@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const newItemForm = document.querySelector('#add-new-item-form');
     newItemForm.addEventListener('submit', handleNewItemFormSubmit);
 
+    const deleteAllButton = document.querySelector('#delete-all');
+    deleteAllButton.addEventListener('click', handleDeleteAllClick);
+
 });
 
 
@@ -38,7 +41,7 @@ const createListItem = function(form){
 };
 
 
-
-
-
-
+const handleDeleteAllClick = function(event){
+    const munroList = document.querySelector('#munro-list');
+    munroList.innerHTML = '';
+};
