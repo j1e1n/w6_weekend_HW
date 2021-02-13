@@ -1,0 +1,46 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 2rem;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+#munro-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.list-item {
+    border: rosybrown solid 2px;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: lightsteelblue 10px 10px;
+    
+}
+
+input {
+    padding: 3px;
+    margin: 10px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px;
+    background-color: lightsteelblue;
+    border: lightsteelblue solid 2px ;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
