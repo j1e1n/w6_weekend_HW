@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const deleteAllButton = document.querySelector('#delete-all');
     deleteAllButton.addEventListener('click', handleDeleteAllClick);
 
+    const sortListItems = document.querySelector('#sort');
+    sortListItems.addEventListener('click', handleListItemSort);
+
+
 });
 
 
@@ -44,4 +48,18 @@ const createListItem = function(form){
 const handleDeleteAllClick = function(event){
     const munroList = document.querySelector('#munro-list');
     munroList.innerHTML = '';
+};
+
+
+const handleListItemSort = function(event){
+    if(event.target.value === 'highest'){
+        //sort highest to lowest
+        console.log('highest clicked')
+    } else {
+        if(event.target.value === 'lowest'){
+            //sort lowest to highest
+            console.log('lowest clicked')
+        }
+    }
+
 };

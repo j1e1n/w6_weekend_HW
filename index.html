@@ -35,15 +35,19 @@
                 <option value="Stirling">Stirling</option>
             </select>
         </div>
-
         <input type="submit" value="Add to List"/>
-
     </form>
-
-   
 
     <h1>Munro List</h1>
     <button id="delete-all">Delete All</button>
+
+    <form id="sort">
+        <input type="radio" id="highest" name="sort" value="highest">
+        <label for="highest">Sort by Highest</label><br>
+    <input type="radio" id="lowest" name="sort" value="lowest">
+        <label for="lowest">Sort by Lowest</label><br>
+    </form>
+
     <ul id="munro-list"></ul>
 
     </div>
